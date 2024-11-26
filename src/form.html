@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Article Page</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Blog</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="contact container">
+      <form action="/success.html" method="POST" data-netlify="true" name="contact_form" class="form">
+        <input type="hidden" name="form-name" value="contact_form">
+        
+        <h1 class="form__title">Contacto</h1>
+        <h2 class="form__subtitle">Rellena tu petición</h2>
+        
+        <div class="mb-3">
+          <label for="name" class="form-label">Nombre:</label>
+          <input type="text" id="name" name="name" class="form-control" placeholder="Introduce tu nombre" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail:</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="Introduce tu correo" required>
+        </div>
+        
+        <div class="mb-3">
+          <label for="message" class="form-label">Mensaje:</label>
+          <textarea id="message" name="message" class="form-control" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+      </form>
+      </main>
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

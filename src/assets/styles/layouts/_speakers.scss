@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: $font-family-sans-serif;
+    color: $main-color;
+    background-color: $background-color;
+  }
+  
+  .speakers {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: $main-color;
+      margin-bottom: 2rem;
+    }
+  
+    &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+  
+      &__participant {
+        background-color: $uoc-bg;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        flex: 1 1 calc(33.333% - 2rem); 
+        max-width: calc(33.333% - 2rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+  
+        &:hover {
+          background-color: $uoc-bg;
+          transform: scale(1.02);
+          transition: all 0.3s ease-in-out;
+        }
+  
+        &__image {
+          width: 80px;
+          height: 80px;
+          margin-bottom: 1rem;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+  
+        &__name {
+          font-size: 1.5rem;
+          color: $main-color;
+          margin: 0.5rem 0;
+        }
+  
+        &__description {
+          font-size: 1rem;
+          color: $main-color;
+          opacity: 0.8;
+        }
+  
+        @container (min-width: 300px) {
+          &__name {
+            font-size: 1.4rem;
+          }
+  
+          &__description {
+            font-size: 0.9rem;
+          }
+        }
+  
+        @container (min-width: 500px) {
+          &__name {
+            font-size: 1.6rem;
+          }
+  
+          &__description {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .speakers {
+      padding: 1.5rem;
+  
+      &__grid {
+        gap: 1.5rem;
+  
+        &__participant {
+          flex: 1 1 calc(50% - 1.5rem); 
+          max-width: calc(50% - 1.5rem);
+        }
+      }
+  
+      &__title {
+        font-size: 2rem;
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .speakers {
+      padding: 1rem;
+  
+      &__grid {
+        gap: 1rem;
+  
+        &__participant {
+          flex: 1 1 100%; 
+          max-width: 100%;
+        }
+      }
+  
+      &__title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  
+  @supports not (display: flex) {
+    .speakers__grid {
+      display: block;
+  
+      &__participant {
+        width: 100%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }

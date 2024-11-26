@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Article Page</title>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Blog</title>
+  </head>
+  <body>
+    <include src="./views/header.html"></include>
+
+    <main class="article container">
+      <div class="article__hero">
+        <img src="./assets/images/portada_blog.jpg" alt="Evento de Seguridad Informática">
+        <div class="article__text">
+          <h1>Jornadas de Seguridad Informática 2024</h1>
+          <cite>por Bernardo Fernández López</cite>
+        </div>
+      </div>
+    
+      <section class="article__content">
+        <div class="article__content__column article__content__column--large">
+          <p>
+            La seguridad informática es esencial para proteger datos sensibles y garantizar
+            la estabilidad de los sistemas en un mundo digital.
+          </p>
+        </div>
+        <div class="article__content__column article__content__column--small">
+          <p>
+            Las Jornadas de Seguridad Informática 2024 reunirán a expertos y entusiastas para analizar 
+            las últimas tendencias y desafíos del sector. Este evento es una oportunidad única para 
+            aprender sobre cómo proteger redes, sistemas y datos ante amenazas digitales cada vez más 
+            sofisticadas. Contará con ponencias sobre ataques avanzados, estrategias de defensa, y 
+            talleres prácticos que abordarán temas como análisis forense, gestión de incidentes y 
+            simulaciones en entornos reales. Además, se presentarán herramientas innovadoras y casos 
+            de éxito que marcarán el futuro de la ciberseguridad. ¡No te lo pierdas!
+          </p>
+        </div>
+      </section>
+    
+      <section class="article__list">
+        <ol class="article__list__items">
+          <li class="article__list__item">
+            <h3>Conferencias destacadas</h3>
+            <p>
+              Ponentes expertos hablarán sobre las últimas amenazas cibernéticas, cómo enfrentarlas y cómo anticiparse a posibles ataques.
+            </p>
+          </li>
+          <li class="article__list__item">
+            <h3>Talleres prácticos</h3>
+            <p>
+              Aprende técnicas de análisis forense, gestión de incidentes y simulaciones de ataques en un entorno controlado.
+            </p>
+          </li>
+          <li class="article__list__item">
+            <h3>Redes de contactos</h3>
+            <p>
+              Una oportunidad única para conectar con profesionales de la industria, académicos y expertos en ciberseguridad.
+            </p>
+          </li>
+        </ol>
+      </section>
+    
+      <section class="article__additional-text">
+        <h2>
+          Protege tus datos y sistemas en un mundo interconectado
+        </h2>
+        <p>
+          En un contexto donde las amenazas digitales son cada vez más sofisticadas, la seguridad informática se ha convertido en un 
+          elemento esencial para empresas y usuarios particulares. Desde la implementación de medidas preventivas hasta la respuesta 
+          a incidentes, estas jornadas te proporcionarán el conocimiento necesario para mantener tus sistemas seguros.
+        </p>
+      </section>
+    
+      <section class="article__summary">
+        <img src="./assets/images/article_image.jpg" alt="Ciberseguridad en acción" class="article__summary__image">
+        <p>
+          No pierdas la oportunidad de participar en este evento imprescindible. Las Jornadas de Seguridad Informática 2023 te 
+          brindarán una visión completa del panorama actual y las herramientas necesarias para estar un paso por delante de los atacantes.
+        </p>
+        <p>
+          ¡Te esperamos para aprender, compartir y construir un futuro digital más seguro!
+        </p>
+      </section>
+    </main>
+  
+
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>

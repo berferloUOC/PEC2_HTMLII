@@ -1,0 +1,11 @@
+{
+  "extends": ["stylelint-config-recommended-scss"],
+  "rules": {
+	"selector-class-pattern": "^[a-zA-Z0-9_-]+$",
+    "declaration-block-no-duplicate-properties": true,
+	"max-nesting-depth": 4,
+    "color-hex-length": "short",
+	"property-no-vendor-prefix": true,
+	"no-descending-specificity": null
+   }
+}
